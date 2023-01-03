@@ -1,0 +1,140 @@
+/* all */
+@import url(./reset.css);
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* header */
+.top-work{
+    position: fixed;
+    height: 80px;
+    width: 90vw;
+    z-index: 999;
+    margin: 0 5vw;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 4px rgb(30, 30, 30);
+}
+.top-work .list a{
+    color: rgb(237, 120, 74);
+
+}
+.top-work .list a:hover{
+    color: rgb(168, 216, 185);
+}
+.smallTop{
+	height: 80px;
+}
+.smallTop .topCenter{
+    margin: 1vh auto 0;
+  }
+/* illustration */
+.work{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10vh 0 40px;
+}
+.work-title{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    z-index: 99;
+    width: 90vw;
+    /* box-shadow: 0 1px 5px #888; */
+}
+.work h2{
+    font-size: 2em;
+    color: rgb(30, 30, 30);
+}
+
+.work-big{
+    margin: 30px auto;
+    width: 90vw;
+    height: 10%;
+}
+.work-detail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.work-describe{
+    position: absolute;
+    right: 5vw;
+    bottom: 3vh;
+    width: 30vw;
+    color: rgb(30, 30, 30);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 5px 10px 10px;
+    position: fixed;
+    margin: 0 5vw;
+    z-index: -1;
+}
+.work-describe p,.work-describe h2{
+    padding: 10px;
+    margin: 0 auto;
+}
+.workimg-small{
+    width: 90vw;
+    margin: 5vh 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.workimg-small p{
+    width: 30vw;
+    padding-top: 10px;
+    padding-left: 30px ;
+    padding-right: 5vw;
+    color: rgb(30, 30, 30);
+    font-size: 1.2em;
+    line-height: 2em;
+    
+}
+.workimg-small img,.work-detail video{
+    width: 50vw;
+    align-self: flex-end;
+    padding-left: 5vw;
+}
+.nextpage {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 4em;
+    outline: none;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+}
+.nextpage a,.lastpage a{
+    color:rgb(237, 120, 74);
+}
+.nextpage a:hover,.lastpage a:hover{
+    color:rgb(168, 216, 185);
+}
+.lastpage {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 4em;
+    outline: none;
+    position: fixed;
+    left: 5vw;
+    bottom: 5vh;
+}
+
+/* footer */
+.bottom{
+    border-top: 4px solid rgb(30, 30, 30);
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+
+}

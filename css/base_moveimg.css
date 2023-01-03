@@ -1,0 +1,45 @@
+.block {
+	text-transform: lowercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.block__title {
+	position: relative;
+	font-size: rem;
+	margin: 0 0 1.5rem 0;
+	padding: 0.5rem 0;
+	cursor: pointer;
+	font-family: titling-gothic-fb-wide, sans-serif;
+	font-weight: 700;
+	color: var(--color-blocktitle);
+}
+.block__title:hover {
+	color: var(--color-blocktitle-hover);
+}
+.menu__item-sub:hover{
+	opacity: 1;
+}
+.hover-reveal {
+	position: fixed;
+	z-index: -1;
+	width: 600px;
+	height: 300px;
+	opacity: 0;
+}
+.hover-reveal__inner,
+.hover-reveal__img {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.hover-reveal__img {
+	position: absolute;
+	background-size: cover;
+}
+@media screen and (min-width: 53em) {
+	.block {
+		align-items: flex-start;
+	}
+}
